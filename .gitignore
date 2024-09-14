@@ -1,0 +1,14 @@
+venv
+.env
+*.pyc
+__pycache__
+data
+*.logs
+venv-combo
+.env
+*.pyc
+__pycache__
+data
+trained_models
+*.log
+.DS_Store
