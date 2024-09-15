@@ -75,11 +75,7 @@ def streamlit_ui():
         st.header("Settings")
 
         # Display collection storage index after selection
-        if selected_collection:
-            storage_index = collections[selected_collection]
-            st.write(f"Selected Index: {storage_index}")
-        else:
-            storage_index = None
+        storage_index = st.text_input("Index Name Input: ")
 
         st.header("Upload Documents")
         uploaded_files = st.file_uploader("Choose files", accept_multiple_files=True, type=['txt', 'pdf', 'md'])
